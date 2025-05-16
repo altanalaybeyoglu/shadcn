@@ -43,30 +43,31 @@ import {
 
 const items = [
   {
-    title: "Home",
+    title: "Rapor",
     url: "/",
     icon: Home,
   },
   {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Clients",
+    title: "Müşteriler",
     url: "/clients",
     icon: User2,  // You might want to import and use a more appropriate icon
   },
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
+    title: "Dogs",
+    url: "/dogs",
+    icon: Inbox,
   },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
-  },
+  /*
+    {
+      title: "Search",
+      url: "#",
+      icon: Search,
+    },
+    {
+      title: "Settings",
+      url: "#",
+      icon: Settings,
+    }, */
 ];
 
 const AppSidebar = () => {
@@ -106,7 +107,7 @@ const AppSidebar = () => {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        <SidebarGroup>
+        <SidebarGroup className="hidden">
           <SidebarGroupLabel>Projects</SidebarGroupLabel>
           <SidebarGroupAction>
             <Plus /> <span className="sr-only">Add Project</span>
@@ -133,7 +134,7 @@ const AppSidebar = () => {
           </SidebarGroupContent>
         </SidebarGroup>
         {/* COLLAPSABLE */}
-        <Collapsible defaultOpen className="group/collapsible">
+        <Collapsible defaultOpen className="group/collapsible hidden">
           <SidebarGroup>
             <SidebarGroupLabel asChild>
               <CollapsibleTrigger>
@@ -166,7 +167,7 @@ const AppSidebar = () => {
           </SidebarGroup>
         </Collapsible>
         {/* NESTED */}
-        <SidebarGroup>
+        <SidebarGroup className="hidden">
           <SidebarGroupLabel>Nested Items</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>

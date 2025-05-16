@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface DogResponse {
   message: string;
@@ -41,7 +42,13 @@ const Page = () => {
   return (
     <div className="flex flex-col items-center min-h-screen p-4">
       {dogImage ? (
-        <img src={dogImage} alt="Random Dog" className="max-w-md rounded-lg shadow-lg mb-8" />
+        <Image 
+          src={dogImage} 
+          alt="Random Dog" 
+          width={500}
+          height={500}
+          className="max-w-md rounded-lg shadow-lg mb-8"
+        />
       ) : (
         <p>Loading dog image...</p>
       )}
