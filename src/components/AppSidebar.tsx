@@ -56,6 +56,11 @@ const items = [
     url: "/dogs",
     icon: Inbox,
   },
+  {
+    title: "Ödemeler",
+    url: "/payments",
+    icon: Inbox,
+  },
   /*
     {
       title: "Search",
