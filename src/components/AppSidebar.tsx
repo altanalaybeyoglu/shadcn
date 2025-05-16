@@ -1,14 +1,13 @@
 import {
   Home,
   Inbox,
-  Search,
-  Settings,
   User2,
   ChevronUp,
   Plus,
   Projector,
   ChevronDown,
 } from "lucide-react";
+// Removed unused Search and Settings imports
 import {
   Sidebar,
   SidebarContent,
