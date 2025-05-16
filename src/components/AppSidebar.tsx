@@ -54,9 +54,9 @@ const items = [
     icon: Inbox,
   },
   {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
+    title: "Clients",
+    url: "/clients",
+    icon: User2,  // You might want to import and use a more appropriate icon
   },
   {
     title: "Search",
@@ -78,8 +78,8 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
               <Link href="/">
-                <Image src="/logo.svg" alt="logo" width={20} height={20} />
-                <span>Lama Dev</span>
+                <Image src="https://www.turkekspres.com.tr/storage/2025/02/Turk-Ekspres-Logo-1.png" alt="logo" width={20} height={20} />
+                <span>TurkExpress</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

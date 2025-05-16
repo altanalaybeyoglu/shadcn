@@ -8,7 +8,7 @@ const popularContent = [
     title: "JavaScript Tutorial",
     badge: "Coding",
     image:
-      "https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://www.turkekspres.com.tr/storage/2025/02/Turk-Ekspres-Logo-1.png?auto=compress&cs=tinysrgb&w=800",
     count: 4300,
   },
   {
