@@ -12,7 +12,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Toaster } from "@/components/ui/sonner"
 import { toast } from "sonner"
 import { ArrowLeft, Save } from "lucide-react"
 import Link from "next/link"
@@ -127,9 +126,8 @@ export function ClientForm() {
     // Simulate API call
     setTimeout(() => {
       console.log(values)
-      toast({
-        title: "Client added successfully",
-        description: `${values.firmaAdi} has been added to the system.`,
+      toast.success("Client added successfully", {
+        description: `${values.firmaAdi} has been added to the system.`
       })
       setIsSubmitting(false)
       router.push("/")
