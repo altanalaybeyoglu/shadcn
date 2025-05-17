@@ -52,7 +52,7 @@ const items = [
     icon: User2,  // You might want to import and use a more appropriate icon
   },
   {
-    title: "Dogs",
+    title: "Dogs!",
     url: "/dogs",
     icon: Inbox,
   },

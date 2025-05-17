@@ -11,7 +11,7 @@ export default function Home() {
                 <Link href="clients/add-client">
                     <Button className="flex items-center gap-2">
                         <PlusCircle className="h-4 w-4" />
-                        Add New Clienttttt
+                        Add New Client
                     </Button>
                 </Link>
             </div>
