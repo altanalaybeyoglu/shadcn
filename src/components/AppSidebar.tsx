@@ -43,22 +43,28 @@ import {
 const items = [
   {
     title: "Rapor",
-    url: "/",
+    url: "/dashboard",
     icon: Home,
   },
   {
     title: "Müşteriler",
-    url: "/clients",
+    url: "/dashboard/clients",
+    icon: User2,  // You might want to import and use a more appropriate icon
+  },
+
+  {
+    title: "Müşteri kartı",
+    url: "/dashboard/client-card",
     icon: User2,  // You might want to import and use a more appropriate icon
   },
   {
     title: "Dogs!",
-    url: "/dogs",
+    url: "/dashboard/dogs",
     icon: Inbox,
   },
   {
-    title: "Ödemeler",
-    url: "/payments",
+    title: "Kişi Yönetimi",
+    url: "/dashboard/users",
     icon: Inbox,
   },
   /*
